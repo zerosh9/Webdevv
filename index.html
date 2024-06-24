@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!--head section -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderWorld Theme Park</title>
+    <meta name="description" content="This is a website for a theme park operator called wonderworld.">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Theme park operator">
+     <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="./Stylesheet/styles.css">
+</head>
+
+<!---body section which contain all the visible content-->
+<body>
+    <!--main grid container for the home page-->
+    <div class="grid-container-index">
+              <!-- Navigation bar section-->
+              <nav class="navbar">
+                <h1 class="logo">WonderWorld</h1>
+                     <!-- Menu button for mobile view -->
+                     <img src="img/menu-btn.svg" alt="" class="menu-btn">  
+                <!-- Navigation links -->
+                <!--the three pages our group have worked on is the home, attractions and the arrange visit pages. The rest is just for display-->
+                <ul class="nav-links">
+                    <li class="ctn"><a href="index.html">Home</a></li> 
+                    <li class="ctn"><a href="attractions.html">Attractions</a></li> 
+                    <li class="ctn"><a href="arrange.html">Arrange visit</a></li>
+                    <li class="ctn"><a href="Tickets">Tickets</a></li>
+                    <li class="ctn"><a href="Events">Events</a></li>
+                     <li class="ctn"><a href="Contacts">Contacts</a></li> 
+                     <li class="ctn"><a href="About">About us</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Header section -->
+            <header>
+                <div class="header-content">
+                    <img src="img/w1.jpg" alt="" width="800" height="440">
+                    <h3>Explore the magic and discover a world of wonders!</h3>
+                    <div class="line"></div>
+                    <h2>A WONDWEFULL EXPERIENCE</h2>
+                </div>
+            </header>
+    
+             <!-- About section -->
+                <section class="about">
+                    <div class="row">
+                        <div class="col about-park">
+                            <h2>ABOUT WONDERWORLD</h2>
+                            <div class="line"></div>
+                            <P>Discover the essence of WonderWorld. Uncover the park's history, mission, and commitment to creating magical moments. Dive into the stories behind the magic, from humble beginnings to a haven of joy. WonderWorld is not just a theme park; it's a journey into imagination and endless possibilities..</P>
+                            <a href="index.html" class="ctn">Learn More</a>
+                        </div>
+                            </div>
+                        </section>
+    
+            <!-- Attractions section -->
+            <div id="attractions">
+                    <div class="row">
+                        <div class="col">
+                            <div class="title">
+                                <h2>Main Attractions</h2>
+                                <div class="line"></div>
+                            </div>
+                            <!-- Video player -->
+                            <div class="video-player">
+                                <video width="390" height="190" autoplay loop muted >
+                                <source src="img/attraction.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <p>Dive into WonderWorld's Main Attractions, a playground of excitement and magic. From thrilling roller coasters to enchanting exhibits, our theme park offers a tapestry of experiences for all ages. Whether you seek adrenaline or whimsy, each corner promises a unique adventure. WonderWorld is your invitation to embrace joy, laughter, and the extraordinary.</p>
+                            <a href="attractions.html" class="ctn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+            <!-- Arrange Your Visit section -->
+            <div id="arrange">
+                <div class="row">
+                    <div class="col content-col">
+                        <h2>ARRANGE YOUR VISIT</h2>
+                        <div class="line"></div>
+                        <p>Find everything you need for a hassle-free experience. From tickets to park hours, our user-friendly guides ensure you're well-prepared for a day of magic and excitement. Your journey from planning to play made simple at WonderWorld</p>
+                        <a href="arrange.html" class="ctn">Learn More</a>
+                    </div>
+                    <div class="col image-col">
+                <!-- Image gallery for the arrange your visit -->
+                        <div class="image-gallery">
+                            <img width="220" height="150" src="img/a.jpg" alt="">
+                            <img width="220" height="150" src="img/a1.jpg" alt="">
+                            <img width="220" height="150" src="img/a2.jpg" alt="">
+                            <img width="220" height="150" src="img/a3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <!-- Footer section -->
+            <footer>
+                 <!-- Navigation links in the footer -->
+                <nav>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Park Map</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Copyrights</a></li>
+                        <li><a href="#">Social Media</a></li>
+                    </ul>
+                </nav>
+            <!-- Form for submitting name and email -->
+                <form action="/action_page.php">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+            </footer>
+    </div> 
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')  
+        const navlinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click', ()=>{
+               navlinks.classList.toggle('mobile-menu')
+        })
+        </script>
+</body>
+</html>

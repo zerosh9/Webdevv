@@ -1,0 +1,974 @@
+/* Importing external font for the logo */
+
+@import url('https://fonts.googleapis.com/css?family=Trirong');
+
+/* Resetting default styles for all elements to ensure consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header 1 styles for main headings */
+h1 {
+    font-family: 'Trirong';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black; 
+}
+
+/* Header 2 styles for subheadings */
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+
+/* Resetting default styles for all elements to ensure consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header 1 styles for main headings */
+h1 {
+    font-family: 'Trirong';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black; 
+}
+
+/* Header 2 styles for subheadings */
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}
+
+/* Header 3 styles for additional subheadings */
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* Paragraph styles for general text */
+p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: black;
+}
+
+/* link styles for hyperlinks */
+a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(21, 0, 255);
+}
+
+/* styles for clickable elements, such as buttons */
+.ctn {
+    padding: 8px 15px;  
+    background: #D1D9DF;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Hover effect for clickable elements */
+.ctn:hover {
+    color: red;
+}
+
+/*Nav CSS-------------------------------------------*/
+/* Navigation section styles */
+.nav {grid-area: nav;}
+
+/* Navbar styles for the overall navigation container */
+.navbar {
+    background: #f0f0f0;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF;
+    height: 10vh;
+}
+.nav-links {
+    display: flex;
+    align-items: center; 
+} 
+.navbar .logo {
+    color: #000000;
+}
+.navbar ul {  
+    list-style: none; 
+}
+
+.nav-links li {
+    margin: 0 16px;
+    background-color: #2A384c;
+}
+
+.nav-links li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/*Index.html CSS------------------------------------*/
+
+/* Grid container styles for index.html */
+.grid-container-index {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'nav nav nav nav nav nav'
+    'header header header header header header'
+    'about about about about about about'
+    'attractions attractions attractions attractions attractions attractions'
+    'arrange arrange arrange arrange arrange arrange'
+    'footer footer footer footer footer footer'
+    ;
+}
+
+/* Header styles for index.html */
+header {grid-area: header;}
+header {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;  
+   width:100%;
+   border-radius: 10px;
+   border: 2px solid #D1D9DF;
+   height: 60vh;   
+   padding: 30px; 
+   margin-top: 55px; 
+}
+.header-content img {
+    position: absolute;
+    left: 220px;
+    top: 0px;
+    z-index: -1;
+}
+.header-content {
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.header-content h2 {
+    color: white;
+    font-family: serif;
+    font-weight: lighter;
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px; 
+}
+
+/* Line styles */
+.line {
+    width: 150px;
+    height: 4px;
+    background: #ebebec;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.menu-btn {
+    position: absolute; 
+    top: 30px;
+    right: 30px;
+    width: 40px; 
+    cursor: pointer;
+    display: none;
+ } 
+
+
+/*--------------about section---------------------*/
+
+/* About section styles */
+.about {grid-area: about;} 
+.about {
+    background-color: #2a384c;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF;
+    text-align: center;
+    width:100%;
+    height:300px;
+    padding: 30px;
+}
+.about-park h2 {
+    font-size: 5vmin;
+    color: #ffffff;
+}
+.about-park .line {
+    margin-bottom: 50px;
+    background: #D1D9DF;
+}
+
+/* Paragraph styles within about-park */
+.about-park p {
+    color: rgb(255, 255, 255);
+    padding: 0px 20px;
+}
+
+/* Ctn styles within about-park */
+.about-park .ctn {
+    margin-top: 20px;
+}
+
+/*--------------attractions section---------------------*/ 
+
+/* Attractions section styles */
+#attractions {grid-area: attractions;}
+#attractions {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF;
+    height: 120vh; 
+    display: flex;   
+    height:500px;
+    padding: 100px;
+}
+
+.video-player {
+    border-top: none;
+    padding:0;
+    margin:0;
+    background: rgb(229, 231, 245);
+}
+/* Video styles */ 
+video { 
+    position: relative;
+    top:-5px;
+}
+/* Row styles for layout consistency */
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.col {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    justify-content: center;  
+}  
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.attractions .row {
+    margin-top: 10px;
+}    
+.title h2 {
+    font-size: 7vmin;
+    color: #000000;
+}
+.title .line {
+    margin-bottom: 50px;
+    background: #2A384C;  
+}
+/* Additional paragraph styles */
+p {
+    color: #000000;
+    padding: 10px 20px;   
+    text-align: center;
+} 
+
+/* Ctn styles within attractions */
+
+.attractions .ctn {
+    margin-top: 20px;
+}  
+
+/*----------------arrange your visit section-------------------*/
+
+/* Arrange your visit section styles */
+#arrange {grid-area: arrange;}
+#arrange {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF; 
+}
+.content-col {
+    width: 60%;
+    height: 40vh;
+}
+.image-col {
+    width: 40%;
+}
+
+/* image gallery styles */
+.arrange .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img {
+    max-width: 150px;
+    margin: 10px;
+}
+.content-col h2 {
+    font-size: 5vmin;
+    color: #000000;
+}
+.content-col .line {
+    background: #2A384C;
+} 
+.content-col p {
+    padding: 10px;
+}
+/* Ctn styles within arrange section */
+.content-col .ctn {
+    margin-left: -100px;
+     margin: 10px;
+}
+
+/*-------------footer section----------------------*/
+
+footer {grid-area: footer;}
+footer {
+    background-color:#2A384C;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF;
+    height: 23vh;
+    padding: 50px 80px;
+    padding-bottom: 0px;
+}
+
+/* navigation styles for footer section */
+footer nav ul {
+    text-align:left;
+} 
+
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* footer form styles */
+footer form {
+    position: relative;
+    left: 900px;
+    bottom: 50px;
+    color: #f0f0f0;
+}
+
+
+/* Mobile device */
+/* Responsive design for smaller screens */
+@media only screen and (max-width:850px){
+    .menu-btn {
+        display: block;
+        top: 10px;
+    }
+    .navbar {
+        padding: 0; 
+    }
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background:#2a384c;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .nav-links .ctn {
+        background: #D1D9DF;
+    }
+    .nav-links li a {
+        color: #000000;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 40%;
+    }
+    .nav-links li {
+        margin: 20px auto;
+    }
+    .header-content img {
+        position: absolute;
+        left: -10%;
+        top: 0px;
+        z-index: -1;
+    }
+
+    footer {
+        height: 33vh;
+        padding: 50px 80px;
+        padding-bottom: 0px;
+    }
+
+    footer nav ul {
+        text-align:start;
+    } 
+    
+    footer nav ul li {
+        display: block;
+        margin: 0 20px;
+    }
+    
+    footer a {
+        font-size: 13px;
+        color: #ffffff;
+        text-decoration: none;
+        
+    }
+    footer form {
+        position: relative;
+        left: 210px;
+        margin: -40px;
+        color: #f0f0f0;
+    }
+}
+
+/*---------------Animations---------*/
+
+/* Image transition effect */
+img {
+    transition: transform .3s ease;
+}
+/* Image scale effect on hover */
+img:hover {
+    transform: scale(1.1 );
+}
+/* Ctn hover effect */
+.ctn:hover {
+background: #6595ba;
+color: rgb(0, 0, 0);
+box-shadow: 2px 2px 5px #00000082;
+}
+/* Hyperlink hover effect */
+a:hover {
+    color: #75a2e2;
+} 
+
+/*---------arrange.html css---------------------*/
+
+/* Grid container styles for arrange.html */
+.grid-container-arrange {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:'nav nav nav nav nav nav'
+    'information information information information information information'
+    'tips tips tips tips tips tips'
+    'schedules schedules schedules schedules schedules schedules'
+    'contact contact contact contact contact contact'
+    'links links links links links links'
+    'footer footer footer footer footer footer'
+}
+
+/*---------information section---------------------*/
+.information {grid-area: information;}
+.information {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF;
+    text-align: center;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+/* Heading styles within the information section */
+.information h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:1px solid #2A384c;
+    background-color: #D1D9DF;
+    border-radius: 20px;
+     border-bottom: none;
+     border-right:none;
+     position: relative;
+     padding: 4px;
+     text-align: justify;
+}
+
+/* Table styles for information section */
+.information table { 
+    border:1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+/* Table header styles */
+.information table th {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-variant: normal;
+    color: blue;
+    border:1px solid black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;  
+}
+/* Table data styles */
+.information table td {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-variant: normal;
+    color: rgb(0, 0, 0);
+    border:1px solid black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;   
+}
+
+/* Address styles */
+.information address {
+    text-align: left;
+    padding-top: 30px;
+}
+
+/*---------tips section--------------------*/
+
+/* Tips section styles */
+.tips {
+    grid-area: tips; 
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Tips header section styles */
+.tips h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:1px solid #2A384c;
+    background-color: #D1D9DF;
+    border-radius: 20px;
+     border-bottom: none;
+     border-right:none;
+     position: relative;
+     padding: 4px;
+     text-align: justify;
+}
+
+/* subheading styles for Tips section  */
+.tips h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(0, 51, 255);
+}
+/*---------schedules section---------------------*/
+
+/* Schedules section styles */
+.schedules {
+    grid-area: schedules; 
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF;
+    text-align: center;
+    padding: 10px;
+}
+
+/* heading style for schedules section */
+.schedules h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:1px solid #2A384c;
+    background-color: #D1D9DF;
+    border-radius: 20px;
+     border-bottom: none;
+     border-right:none;
+     position: relative;
+     padding: 4px;
+     text-align: justify;
+}
+/* List styles within the schedules section */
+.schedules ul {  
+    display: flex;
+    justify-content: center;
+} 
+/* List item styles within the schedules section */        
+.schedules ul li {
+    margin: 0 16px;
+    background-color: #2A384c;
+    list-style: none; 
+}
+/* Link styles within the schedules section */
+.schedules ul li a {
+    color: white;
+}
+
+/*---------contact information section-------------*/
+
+/* Contact information section styles */
+.contact {
+    grid-area: contact; 
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF;
+    text-align: center;
+    padding: 10px;
+}
+
+/* heading styles */
+.contact h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:1px solid #2A384c;
+    background-color: #D1D9DF;
+    border-radius: 20px;
+     border-bottom: none;
+     border-right:none;
+     position: relative;
+     padding: 4px;
+     text-align: justify;
+}
+  
+/*---------quick links section---------------------*/
+
+/* Quick links section styles */
+.links {grid-area: links; 
+   
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #D1D9DF;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Quick links header styles */
+.links h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:1px solid #2A384c;
+    background-color: #D1D9DF;
+    border-radius: 20px;
+    border-bottom: none;
+    border-right:none;
+    position: relative;
+    padding: 4px;
+    text-align: justify;
+}
+
+/* arrange links styles */
+.arrange-links {  
+    display: flex;
+    justify-content: center;
+}  
+    
+.arrange-links li {
+    margin: 0 16px;
+    background-color: #2A384c;
+    list-style: none;  
+    margin: 10px;
+}
+.arrange-links li a {
+    color: white;
+}
+
+
+
+/*---------attractions.html css---------------------*/
+
+/* grid container styles for the attractions page*/
+.grid-container-attractions {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:'nav nav nav nav nav nav'
+    'attraction1 attraction1 attraction1 attraction2 attraction2 attraction2'
+    'attraction3 attraction3 attraction3 attraction4 attraction4 attraction4'
+    'footer footer footer footer footer footer'
+}
+
+
+/* first attraction section styles */
+.attraction1 { grid-area: attraction1;}
+.attraction1 {
+    background: #f0f0f0;
+    display: flex;
+   align-items: flex-end;
+   justify-content: center;  
+   border-radius: 10px;
+   border: 2px solid #D1D9DF;
+   height: 80vh;   
+   padding: 30px; 
+   margin-top: 55px;
+}
+
+/* second attraction section styles */
+.attraction2 {grid-area: attraction2;}
+.attraction2 {
+    background: #f0f0f0;
+    display: flex;
+   align-items: flex-end;
+   justify-content: center;  
+   border-radius: 10px;
+   border: 2px solid #D1D9DF;
+   height: 80vh;   
+   padding: 30px; 
+   margin-top: 55px;
+}
+
+/* third attraction section styles */
+.attraction3 {grid-area: attraction3;}
+.attraction3 {
+    background: #f0f0f0;
+    display: flex;
+   align-items: flex-end;
+   justify-content: center;  
+   border-radius: 10px;
+   border: 2px solid #D1D9DF;
+   height: 80vh;   
+   padding: 30px; 
+   margin-top: 3px;
+}
+
+/* fourth attraction section styles */
+.attraction4 {grid-area: attraction4;}
+.attraction4 {
+    background: #f0f0f0;
+    display: flex;
+   align-items: flex-end;
+   justify-content: center;  
+   border-radius: 10px;
+   border: 2px solid #D1D9DF;
+   height: 80vh;   
+   padding: 30px; 
+   margin-top: 3px;
+}
+
+/* first attraction img styles */
+ .attraction1 img {
+     width: 700px;
+     height: 400px;    
+}
+/* second attraction img styles */
+.attraction2 img {
+    width: 240px;
+   height: 400px;    
+}
+/* third attraction img styles */
+.attraction3 img {
+    width: 240px;
+   height: 400px;    
+}
+/* fourth attraction img styles */
+.attraction4 img {
+    width: 240px;
+   height: 400px;    
+}
+/* first attraction header styles */
+.attraction1 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    border:1px solid #2A384c;
+    background-color: #D1D9DF;
+    border-radius: 20px;
+     border-bottom: none;
+     border-right:none;
+     position:absolute;
+     padding: 14px;
+     text-align:center;
+     margin: 20%;
+     margin-right: 10px;
+}
+/* second attraction header styles */
+.attraction2 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    border:1px solid #2A384c;
+    background-color: #D1D9DF;
+    border-radius: 20px;
+     border-bottom: none;
+     border-right:none;
+     position:absolute;
+     padding: 14px;
+     text-align:center;
+     margin: 20%;
+     margin-right: 10px;
+}
+/* third attraction header styles */
+.attraction3 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    border:1px solid #2A384c;
+    background-color: #D1D9DF;
+    border-radius: 20px;
+     border-bottom: none;
+     border-right:none;
+     position:absolute;
+     padding: 14px;
+     text-align:center;
+     margin: 20%;
+     margin-right: 10px;
+}
+/* fourth attraction header styles */
+.attraction4 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    border:1px solid #2A384c;
+    background-color: #D1D9DF;
+    border-radius: 20px;
+    border-bottom: none;
+    border-right:none;
+    position:absolute;
+    padding: 14px;
+    text-align:center;
+    margin: 20%;
+    margin-right: 10px;
+}
+
+/* first attraction text styles */
+.attraction1 p {
+font-size: 15px; 
+color: #000000;
+margin: 40px auto;
+padding: 24px;
+text-align:center;
+margin-right: -50px;
+
+}
+/* second attraction text styles */
+.attraction2 p {
+font-size: 15px; 
+color: #000000;
+margin: 40px auto;
+padding: 24px;
+text-align:center;
+margin-right: -50px;
+}
+/* third attraction text styles */
+.attraction3 p {
+font-size: 15px; 
+color: #000000;
+margin: 40px auto;
+padding: 24px;
+text-align:center;
+margin-right: -50px;  
+}
+/* fourth attraction text styles */
+.attraction4 p {
+font-size: 15px; 
+color: #000000;
+margin: 40px auto;
+padding: 24px;
+text-align:center;
+margin-right: -50px;
+}
+
+/* first attraction button styles */
+.attraction1 button {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    background-color: #2A384C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+/* first attraction button hover styles */
+.attraction1 button:hover {
+background: #6595ba;
+color: rgb(0, 0, 0);
+box-shadow: 2px 2px 5px #00000082;
+}
+/* second attraction button styles */
+.attraction2 button {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    background-color: #2A384C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+/* second attraction button hover styles */
+.attraction2 button:hover {
+    background: #6595ba;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px #00000082;
+}
+/* third attraction button styles */
+.attraction3 button {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    background-color: #2A384C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+/* third attraction button hover styles */
+.attraction3 button:hover {
+    background: #6595ba;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px #00000082;
+}
+/* fourth attraction button styles */
+.attraction4 button {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    background-color: #2A384C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+/* fourth attraction button hover styles */
+.attraction4 button:hover {
+    background: #6595ba;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px #00000082;
+}
+
+
+
+
+    
+
+
+
+   
+     
